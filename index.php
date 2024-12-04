@@ -3,7 +3,14 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
     <h1>Final Project</h1>
-<img src="https://capitolfile.com/get/files/image/galleries/record-shop-mick-haupt-unsplash.jpg" alt="Record Shop Image">
+<style>
+    body {
+        background-image: url('https://capitolfile.com/get/files/image/galleries/record-shop-mick-haupt-unsplash.jpg');
+        background-size: cover; /* Makes the image cover the whole page */
+        background-position: center; /* Centers the background */
+    }
+</style>
+
 <?php
 include "view-footer.php";
 ?>
