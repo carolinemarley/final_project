@@ -12,7 +12,7 @@ while ($artist = $artists->fetch_assoc()) {
     $albums = selectAlbumsByArtist($artist['artist_id']);
   while ($album = $albums->fetch_assoc()){
 ?>
-     <li class="list-group-item"><?php echo $album['album_title']?> - <?php echo $album['albums_on_hand']?> - <?php echo $album['price']?> - <?php echo $album['release_year']?> - <?php echo $album['genre_name']?> </li>
+     <li class="list-group-item"><?php echo $album['album_title']?> - <?php echo $album['albums_on_hand']?> - <?php echo $album['price']?> - <?php echo $album['release_year']?> </li>
 <?php
   }
   ?>
