@@ -5,8 +5,10 @@ function get_db_connection(){
     
     // Check connection
     if ($conn->connect_error) {
-      return false;
+        die("Connection failed: " . $conn->connect_error);  // Output detailed error message
+        return false;
     }
     return $conn;
 }
 ?>
+
