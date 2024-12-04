@@ -2,7 +2,7 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-    <h1>Final Project</h1>
+    <h1 style = "color: lightgray;">Final Project</h1>
 <style>
     body {
         background-image: url('https://capitolfile.com/get/files/image/galleries/record-shop-mick-haupt-unsplash.jpg');
