@@ -20,17 +20,14 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="artists.php">Artists</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="post-result.php">Post Result</a>
+          <a class="nav-link" href="albums.php">Albums</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="get.php">Get</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="get-result.php">Get Result</a>
-        </li>
+          <a class="nav-link" href="artists-with-albums.php">Artists with Albums</a>
+         </li>
       </ul>
     </div>
   </div>
