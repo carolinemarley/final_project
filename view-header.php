@@ -31,6 +31,9 @@
         <li class="nav-item">
           <a class="nav-link" href="analysis.php">Analysis</a>
          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="location.php">Location</a>
+         </li>
       </ul>
     </div>
   </div>
