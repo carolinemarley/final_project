@@ -9,7 +9,7 @@ while ($artist = $artists->fetch_assoc()) {
       <p class="card-text">
       <ul class="list-group">
   <?php
-    $albums = selectAlbumsByArtist($artist['gid']);
+    $albums = selectAlbumsByArtist($artist['aid']);
   while ($album = $albums->fetch_assoc()){
 ?>
      <li class="list-group-item"><?php echo $album['album_title']?> - <?php echo $album['albums_on_hand']?> - <?php echo $album['price']?> - <?php echo $album['release_year']?> </li>
