@@ -16,7 +16,6 @@
 while ($genre = $genres->fetch_assoc()) {
 ?>
   <tr>
-    <td> <?php echo $genre['album_id']?></td>
     <td> <?php echo $genre['album_title']?></td>
     <td> <?php echo $genre['albums_on_hand']?></td>
     <td> <?php echo $genre['price']?></td>
