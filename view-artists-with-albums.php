@@ -18,7 +18,7 @@ while ($artist = $artists->fetch_assoc()) {
   ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Genre: <?php echo $artist['stage_name'];?></small></p>
+      <p class="card-text"><small class="text-body-secondary">Stage Name: <?php echo $artist['stage_name'];?></small></p>
     </div>
     </div>
   <?php
