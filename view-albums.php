@@ -7,7 +7,7 @@
         <th>Title</th>
         <th>Albums on Hand</th>
         <th>Price</th>
-        <th>Release Yeard</th>
+        <th>Release Years</th>
         <th></th>
       </tr>
     </thead>
