@@ -19,8 +19,8 @@ if ($conn === false) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Query to fetch artists
-$query = "SELECT artist_id, artist_name, stage_name FROM artists";
+// Query to fetch artists from the correct table 'artist'
+$query = "SELECT artist_id, artist_name, stage_name FROM artist";
 $artists = $conn->query($query);
 
 if ($artists === false) {
@@ -52,4 +52,3 @@ $conn->close();
     </tbody>
   </table>
 </div>
-
