@@ -1,8 +1,9 @@
 <h1>Artists with Albums</h1>
-<div class="card-group">
+<div class="row row-cols-1 ro-cols-md-5 g-4">
 <?php
 while ($artist = $artists->fetch_assoc()) {
   ?>
+  <div class="col">
     <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?php echo $artist['artist_name'];?></h5>
@@ -21,6 +22,7 @@ while ($artist = $artists->fetch_assoc()) {
       <p class="card-text"><small class="text-body-secondary">Stage Name: <?php echo $artist['stage_name'];?></small></p>
     </div>
     </div>
+  </div>
   <?php
 }
 ?>
