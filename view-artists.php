@@ -1,3 +1,4 @@
+<body style = "background-color: #f8c9d4;">
 <h1>Artists</h1>
 <div class="container">
   <div class="table-responsive">
@@ -26,3 +27,4 @@ while ($artist = $artists->fetch_assoc()) {
     </tbody>
   </table>
 </div>
+</body>
