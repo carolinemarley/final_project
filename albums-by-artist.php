@@ -4,7 +4,7 @@ require_once("model-albums-by-artist.php");
 
 $pageTitle = "Albums by Artist";
 include "view-header.php";
-$books = selectAlbumsByArtist($_GET['id']); 
+$albums = selectAlbumsByArtist($_GET['id']); 
 include "view-albums-by-artist.php";
 include "view-footer.php";
 ?>
