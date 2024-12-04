@@ -5,11 +5,11 @@ while ($artist = $artists->fetch_assoc()) {
   ?>
     <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?php echo $artist['genre_name'];?></h5>
+      <h5 class="card-title"><?php echo $artist['artist_name'];?></h5>
       <p class="card-text">
       <ul class="list-group">
   <?php
-    $albums = selectAlbumsByArtist($artist['artist_id']);
+    $albums = selectAlbumsByArtist($artist['aid']);
   while ($album = $albums->fetch_assoc()){
 ?>
      <li class="list-group-item"><?php echo $album['album_title']?> - <?php echo $album['albums_on_hand']?> - <?php echo $album['price']?> - <?php echo $album['release_year']?> </li>
