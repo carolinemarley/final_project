@@ -1,7 +1,9 @@
+<body style = "background-color: #f8c9d4;">
 <h1>Albums</h1>
+  <div class = "container">
 <div class = "table-responsive">
-  <table class="table">
-    <thead>
+  <table class="table table-striped table-bordered table-hover">
+    <thead class = "thead-dark">
       <tr>
         <th>ID</th>
         <th>Title</th>
@@ -12,7 +14,7 @@
       </tr>
     </thead>
     <tbody>
-      <?php
+<?php
 while ($album = $albums->fetch_assoc()) {
 ?>
   <tr>
@@ -34,3 +36,4 @@ while ($album = $albums->fetch_assoc()) {
     </tbody>
   </table>
 </div>
+</body>
