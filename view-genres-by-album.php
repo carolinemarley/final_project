@@ -6,6 +6,7 @@
         <th>ID</th>
         <th>Title</th>
         <th>Genre Name</th>
+        <th>Genre ID</th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,7 @@ while ($genre = $genres->fetch_assoc()) {
     <td> <?php echo $genre['album_id']?></td>
     <td> <?php echo $genre['album_title']?></td>
     <td> <?php echo $genre['genre_name']?></td>
+    <td> <?php echo $genre['genre_id']?></td>
   </tr>
   <?php
 }
