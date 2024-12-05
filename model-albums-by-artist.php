@@ -2,7 +2,7 @@
 function selectAlbumsByArtist($aid) {
   try {
     $conn = get_db_connection();
-    $stmt = $conn->prepare("select album_title, albums_on_hand, price, release_year, genre_name FROM album a JOIN genre g ON a.genre_id = g.genre_id WHERE a.genre_id = ?");
+    $stmt = $conn->prepare("select artist_name, stage_name, album_title, release_year FROM artist a join album al on a.artist_id = al.artist_id WHERE a.artist_id = ?");
     $stmt->bind_param("i", $aid);
     $stmt->execute(); 
     $result = $stmt->get_result();
