@@ -2,7 +2,7 @@
 function selectGenresbyAlbum($bid) {
   try {
     $conn = get_db_connection();
-    $stmt = $conn->prepare("SELECT album_title, albums_on_hand, price, release_year, genre_name FROM album a join genre g on a.genre_id = g.genre_id WHERE g.genre_id = ?");
+    $stmt = $conn->prepare("SELECT album_id, album_title, genre_name FROM album a JOIN genre g on a.genre_id = g.genre_id where a.genre_id = ?");
     $stmt->bind_param("i", $bid);
     $stmt->execute(); 
     $result = $stmt->get_result();
