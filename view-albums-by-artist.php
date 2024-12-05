@@ -7,7 +7,6 @@
         <th>Title</th>
         <th>Price</th>
         <th>Release Year</th>
-        <th>Genre Name</th>
       </tr>
     </thead>
     <tbody>
