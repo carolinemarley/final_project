@@ -1,5 +1,5 @@
 <h1>Artists with Albums</h1>
-<div class="row row-cols-1 ro-cols-md-5 g-4" style="background-color: #f8d7da;>
+<div class="row row-cols-1 ro-cols-md-5 g-4" style="background-color: #f8d7da;">
 <?php
 while ($artist = $artists->fetch_assoc()) {
   ?>
