@@ -1,4 +1,4 @@
-<h1>Genres by Album</h1>
+<h1>Other Albums on Hand with the Same Genre</h1>
 <div class = "table-responsive">
   <table class="table">
     <thead>
