@@ -25,7 +25,7 @@ while ($album = $albums->fetch_assoc()) {
    <td> <?php echo $album['release_year']?></td>
     <td>
           <form method = "post" action = "genres-by-album.php">
-            <input type = "hidden" name = "bid" value = "<?php echo $album['album_id']?>">
+            <input type = "hidden" name = "bid" value = "<?php echo $album['genre_id']?>">
       <button type="submit" class="btn btn-primary">Genres</button>
     </form>
     </td>
