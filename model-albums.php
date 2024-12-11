@@ -12,4 +12,47 @@ function selectAlbums() {
     throw $e;
   }
 }
+
+function insertAlbum($aTitle, $aOnHand, $aPrice, $aYear) {
+  try {
+    $conn = get_db_connection();
+    $stmt = $conn->prepare("INSERT INTO `album` (`album_title`, `albums_on_hand`, `price`, `release_year`) VALUES (?, ?)");
+    $stmt->bind_param("ssss", $aTitle, $aOnHand, $aPrice, $aYear);
+    $success = $stmt->execute(); 
+    $result = $stmt->get_result(); 
+    $conn->close(); 
+    return $success; 
+  } catch (Exception $e){
+      $conn->close();
+    throw $e;
+  }
+}
+
+function updateAlbum($aTitle, $aOnHand, $aPrice, $aYear, $aid) {
+  try {
+    $conn = get_db_connection();
+    $stmt = $conn->prepare("UPDATE `album` set `album_title` = ?, `albums_on_hand` =?, `price` = ?, `release_year` = ?  WHERE album_id = ?");
+    $stmt->bind_param("ssssi", $aTitle, $aOnHand, $aPrice, $aYear, $aid);
+    $success = $stmt->execute(); 
+    $conn->close(); 
+    return $success; 
+  } catch (Exception $e){
+      $conn->close();
+    throw $e;
+  }
+}
+
+function deleteAlbum($aid) {
+  try {
+    $conn = get_db_connection();
+    $stmt = $conn->prepare("delete from album where album_id =?");
+    $stmt->bind_param("i", $aid);
+    $success = $stmt->execute(); 
+    $conn->close(); 
+    return $success; 
+  } catch (Exception $e){
+      $conn->close();
+    throw $e;
+  }
+}
 ?>
