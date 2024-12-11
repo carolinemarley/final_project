@@ -5,7 +5,7 @@
   </div>
   <div class = "col-auto">
   <?php
-include "view-albumss-newform.php";
+include "view-albums-newform.php";
 ?>
   </div>
   <div class = "container">
