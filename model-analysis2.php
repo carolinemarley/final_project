@@ -6,10 +6,10 @@ function selectArtists() {
             throw new Exception('Database connection failed.');
         }
 
-        $stmt = $conn->prepare("SELECT album_title, sum(albums_on_hand) as num_albums 
+        $stmt = $conn->prepare("SELECT stage_name, count(al.artist_id) as num_albums 
                                 FROM `artist` a 
                                 JOIN `album` al ON a.artist_id = al.artist_id 
-                                GROUP BY album_title");
+                                GROUP BY stage_name");
 
         // Execute the query and check if it's successful
         if (!$stmt->execute()) {
