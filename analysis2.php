@@ -4,7 +4,7 @@ require_once("model-analysis2.php");
 
 $pageTitle = "Artists Chart";
 include "view-header.php";
-$artists = selectAlbums();
+$albums = selectAlbums();
 
 if ($artists == null) {
   echo "Error: No artists data available.";
