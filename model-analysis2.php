@@ -16,7 +16,7 @@ function selectAlbums() {
         // Get the result set
         $result = $stmt->get_result();
         if ($result->num_rows === 0) {
-            throw new Exception('No artists found.');
+            throw new Exception('No albums found.');
         }
 
         $conn->close(); // Close the connection
