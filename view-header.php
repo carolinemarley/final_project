@@ -29,7 +29,19 @@
           <a class="nav-link" href="artists-with-albums.php">Artists with Albums</a>
          </li>
         <li class="nav-item">
-          <a class="nav-link" href="js.php">JavaScript Functions</a>
+          <a class="nav-link" href="js.php">JavaScript #1 Functions</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="js2.php">JavaScript #2 Functions</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="js3.php">JavaScript #3 Functions</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="js4.php">JavaScript #4 Functions</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="js5.php">JavaScript #5 Functions</a>
          </li>
       </ul>
     </div>
