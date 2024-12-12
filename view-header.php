@@ -29,10 +29,10 @@
           <a class="nav-link" href="artists-with-albums.php">Artists with Albums</a>
          </li>
         <li class="nav-item">
-          <a class="nav-link" href="analysis.php">Analysis</a>
+          <a class="nav-link" href="analysis.php">Doughnut Analysis</a>
          </li>
           <li class="nav-item">
-          <a class="nav-link" href="analysis2.php">Analysis 2</a>
+          <a class="nav-link" href="analysis2.php">Bar Chart Analysis</a>
          </li>
         <li class="nav-item">
           <a class="nav-link" href="location.php">Location</a>
