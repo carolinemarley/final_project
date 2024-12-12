@@ -1,5 +1,5 @@
 <body style = "background-color: #f8c9d4;">
-<h1>Store Chart Analysis</h1>
+<h1>Bar Chart Analysis</h1>
 <div>
   <canvas id="myChart"></canvas>
 </div>
