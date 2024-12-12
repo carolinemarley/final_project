@@ -9,7 +9,7 @@ function selectArtists() {
         $stmt = $conn->prepare("SELECT album_title, sum(albums_on_hand) as num_albums 
                                 FROM `artist` a 
                                 JOIN `album` al ON a.artist_id = al.artist_id 
-                                GROUP BY stage_name");
+                                GROUP BY album_title");
 
         // Execute the query and check if it's successful
         if (!$stmt->execute()) {
