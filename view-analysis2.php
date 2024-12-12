@@ -9,9 +9,10 @@
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
-      type: 'bar',  
+      type: 'bar',  <!-- Set the chart type to 'bar' -->
       data: {
         datasets: [{
+          label: 'Number of Albums',  <!-- Add label for dataset -->
           data: [
             <?php
             while ($artist = $artists->fetch_assoc()) {
@@ -27,8 +28,24 @@
           <?php
           $artists = selectArtists(); 
           while ($artist = $artists->fetch_assoc()) {
-            echo "'" . $artist['album_title'] . "',";
+            echo "'" . $artist['album_title'] . "',";  <!-- Ensure 'album_title' is used for the label -->
           }
           ?> 
         ]
- 
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true  <!-- Ensure Y-axis starts at 0 -->
+          }
+        },
+        plugins: {
+          legend: {
+            display: false  <!-- Optionally hide the legend -->
+          }
+        }
+      }
+    });
+  </script>
+</body>
