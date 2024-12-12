@@ -5,7 +5,7 @@
 </div>
 
  <div style="background-color: white; padding: 20px; text-align: center; margin-top: 20px;">
-    <p style="color: lightpink; font-size: 18px; text-align: center;">In this chart, you can see how many albums we have on hand per artist. Please continue to come back to this page to see updated numbers. </p>
+    <p style="color: lightpink; font-size: 18px; text-align: center;">In this chart, you can see our inventory for each album. Please continue to come back to this page to see updated numbers. </p>
   </div>
   
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
