@@ -18,6 +18,20 @@ include "view-header.php";
     </p>
 </div>
 
+<div style="background-color: white; padding: 20px; border-radius: 10px; width: 80%; margin: 100px auto 0; text-align: center;">
+    <h3 style = "color: lightpink;"> Contact Information: </h3>
+    <p style="color: lightpink; font-size: 18px; text-align: center;"> 
+    Phone number: 123-456-7890
+    Email: norman.records@gmail.com
+    </p>
+    <h4 style = "color: lightpink;"> Store hours: </h4>
+    <p style="color: lightpink; font-size: 18px; text-align: center;">
+        Monday - Friday: 8 AM - 8 PM
+        Saturday: 8 AM - 7 PM
+        Sunday: 11 AM - 6 PM
+    </p>
+</div>
+
 <style>
     body {
         background-image: url('https://capitolfile.com/get/files/image/galleries/record-shop-mick-haupt-unsplash.jpg');
