@@ -2,12 +2,12 @@
 require_once("util-db.php");
 require_once("model-analysis2.php"); 
 
-$pageTitle = "Artists Chart";
+$pageTitle = "Albums Chart";
 include "view-header.php";
 $albums = selectAlbums();
 
-if ($artists == null) {
-  echo "Error: No artists data available.";
+if ($albums == null) {
+  echo "Error: No albums data available.";
   exit; 
 }
 
