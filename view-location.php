@@ -28,21 +28,21 @@
 <!-- Include Leaflet JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
-    // Define the static latitude and longitude values
-    var latitude = 17.763;
-    var longitude = 32.3514;
+    // Coordinates for 125 E Main St, Norman, OK 73069
+    var latitude = 35.2230;
+    var longitude = -97.4397;
 
     // Create the map object and set the initial view (latitude, longitude, zoom level)
-    var map = L.map('map').setView([latitude, longitude], 13);
+    var map = L.map('map').setView([latitude, longitude], 16);  // Zoom level 16 is good for a city-level view
 
     // Add the OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Add a marker at the specific location
+    // Add a marker for the specific location
     L.marker([latitude, longitude]).addTo(map)
-        .bindPopup("<b>Location</b><br />This is your specified location.")
+        .bindPopup("<b>125 E Main St, Norman, OK 73069</b><br />This is the location.")
         .openPopup();
 </script>
 
