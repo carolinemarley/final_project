@@ -1,5 +1,4 @@
-<!-- view-location.php -->
-
+<body style = "background-color: #f8c9d4;">
 <!DOCTYPE html>
 <html lang="en">
 <head>
