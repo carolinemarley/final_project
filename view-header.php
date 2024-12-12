@@ -29,12 +29,6 @@
           <a class="nav-link" href="artists-with-albums.php">Artists with Albums</a>
          </li>
         <li class="nav-item">
-          <a class="nav-link" href="analysis.php">Analysis</a>
-         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="location.php">Location</a>
-         </li>
-        <li class="nav-item">
           <a class="nav-link" href="js.php">JavaScript Functions</a>
          </li>
       </ul>
