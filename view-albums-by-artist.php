@@ -1,3 +1,4 @@
+<body style = "background-color: #f8c9d4;">
 <h1>Albums by Artist</h1>
 <div class = "table-responsive">
   <table class="table">
