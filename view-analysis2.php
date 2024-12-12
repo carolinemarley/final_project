@@ -5,7 +5,7 @@
   </div>
 
   <div style="background-color: white; padding: 20px; text-align: center; margin-top: 20px;">
-    <p>You can see here the artists we have records for and how many per artist. Please come back to this page to see updated records.</p>
+    <p style="color: lightpink; font-size: 18px; text-align: center;">You can see here the artists we have records for and how many per artist. Please come back to this page to see updated records.</p>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
