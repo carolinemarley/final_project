@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-analysis.php"); 
+require_once("model-analysis2.php"); 
 
 $pageTitle = "Artists Chart";
 include "view-header.php";
@@ -11,6 +11,6 @@ if ($artists == null) {
   exit; 
 }
 
-include "view-analysis.php";
+include "view-analysis2.php";
 include "view-footer.php";
 ?>
