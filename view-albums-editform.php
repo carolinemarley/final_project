@@ -32,7 +32,7 @@
     <label for="aYear<?php echo $album['release_year'];?>" class="form-label">Release Years</label>
     <input type="text" class="form-control" id="aYear <?php echo $album['release_year']; ?>" name="aYear" value = "<?php echo $album['release_year'];?>">
   </div>
-          <input type="hidden" name="bid" value = "<?php echo $album['album_id'];?>">
+          <input type="hidden" name="aid" value = "<?php echo $album['album_id'];?>">
               <input type ="hidden" name = "actionType" value="Edit">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
