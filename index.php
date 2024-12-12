@@ -9,7 +9,7 @@ include "view-header.php";
 </p>
 
  <h2 style = "color: white;">About the Store</h2>
-    <p style="color:white;">
+    <p style="color: white; font-size: 18px; text-align: center;">
        We are located in Norman, Oklahoma at 125 E Main St. Norman, OK 73069. You can see the exact location on the location page. 
         We were founded in 2020 with the hopes of selling records to music lovers all over. We just want to bring out passion for music to those around us. 
         We are dedicated to serving our customers right and the community of Norman. 
