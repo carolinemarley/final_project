@@ -15,18 +15,17 @@
         data: [
 <?php
 while ($artist = $artists->fetch_assoc()) {
-  echo $artist['num_genres'] . ",";
+  echo $artist['num_albums'] . ",";
 }
 ?> 
         ]
     }],
 
-    // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
 <?php
 $artists = selectArtists(); 
 while ($artist = $artists->fetch_assoc()) {
-  echo "'" .$artist['artist_name'] . "',";
+  echo "'" .$artist['stage_name'] . "',";
 }
 ?> 
     ]
