@@ -1,12 +1,15 @@
 <?php
-function selectAlbums() {
+function selectArtists() {
     try {
         $conn = get_db_connection(); // Make sure the connection is successful
         if (!$conn) {
             throw new Exception('Database connection failed.');
         }
 
-        $stmt = $conn->prepare("select album_title, sum(albums_on_hand) as num_albums from album group by album_title");
+        $stmt = $conn->prepare("SELECT album_title, count(albums_on_hand) as num_albums 
+                                FROM `artist` a 
+                                JOIN `album` al ON a.artist_id = al.artist_id 
+                                GROUP BY stage_name");
 
         // Execute the query and check if it's successful
         if (!$stmt->execute()) {
@@ -16,7 +19,7 @@ function selectAlbums() {
         // Get the result set
         $result = $stmt->get_result();
         if ($result->num_rows === 0) {
-            throw new Exception('No albums found.');
+            throw new Exception('No artists found.');
         }
 
         $conn->close(); // Close the connection
