@@ -46,7 +46,7 @@
         }],
         labels: [
           <?php
-            $albums = data_seek(0);
+            $albums = selectAlbums();
             while ($album = $albums->fetch_assoc()) {
               echo "'" . $album['album_title'] . "',";
             }
