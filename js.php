@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation Example</title>
+    <title>Animation</title>
 </head>
 <body>
-    <div id="box" style="width:100px;height:100px;background-color:red;"></div>
+    <div id="box" style="width:100px;height:100px;background-color:pink;"></div>
     <button onclick="moveBox()">Move</button>
     <script>
         function moveBox() {
