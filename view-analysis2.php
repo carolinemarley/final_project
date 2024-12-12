@@ -9,10 +9,10 @@
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
-      type: 'bar',  <!-- Set the chart type to 'bar' -->
+      type: 'bar',  
       data: {
         datasets: [{
-          label: 'Number of Albums',  <!-- Add label for dataset -->
+          label: 'Number of Albums',  
           data: [
             <?php
             while ($artist = $artists->fetch_assoc()) {
@@ -20,15 +20,15 @@
             }
             ?> 
           ],
-          backgroundColor: '#FF5733',  <!-- Set color for the bars -->
-          borderColor: '#C70039',      <!-- Set color for the border of the bars -->
+          backgroundColor: '#FF5733',  
+          borderColor: '#C70039',      
           borderWidth: 1
         }],
         labels: [
           <?php
           $artists = selectArtists(); 
           while ($artist = $artists->fetch_assoc()) {
-            echo "'" . $artist['album_title'] . "',";  <!-- Ensure 'album_title' is used for the label -->
+            echo "'" . $artist['album_title'] . "',";  
           }
           ?> 
         ]
@@ -37,12 +37,12 @@
         responsive: true,
         scales: {
           y: {
-            beginAtZero: true  <!-- Ensure Y-axis starts at 0 -->
+            beginAtZero: true  
           }
         },
         plugins: {
           legend: {
-            display: false  <!-- Optionally hide the legend -->
+            display: false  
           }
         }
       }
