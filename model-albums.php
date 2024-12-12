@@ -13,6 +13,21 @@ function selectAlbums() {
   }
 }
 
+function selectAlbumsForInput() {
+  try {
+    $conn = get_db_connection();
+    $stmt = $conn->prepare("SELECT album_id, album_title FROM `album` order by ablum_title");
+    $stmt->execute(); 
+    $result = $stmt->get_result();
+    $conn->close(); 
+    return $result; 
+  } catch (Exception $e){
+      $conn->close();
+    throw $e;
+  }
+}
+
+
 function insertAlbum($aTitle, $aOnHand, $aPrice, $aYear, $aGenre, $aArtist) {
   try {
     $conn = get_db_connection();
