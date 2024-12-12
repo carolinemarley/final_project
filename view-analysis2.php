@@ -30,7 +30,7 @@
           // Loop through artists to output their stage names as labels
           $artists = selectArtists(); 
           while ($artist = $artists->fetch_assoc()) {
-            echo "'" . $artist['stage_name'] . "',";  <!-- Ensure stage_name is used as labels -->
+            echo "'" . $artist['stage_name'] . "',"; 
           }
           ?> 
         ]
