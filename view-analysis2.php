@@ -9,10 +9,10 @@
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
-      type: 'bar',  <!-- Change the chart type to 'bar' -->
+      type: 'bar', 
       data: {
         datasets: [{
-          label: 'Number of Albums',  <!-- Label for the dataset -->
+          label: 'Number of Albums',  
           data: [
             <?php
             // Loop through artists to output their number of albums
@@ -21,8 +21,8 @@
             }
             ?> 
           ],
-          backgroundColor: '#FF5733',  <!-- Set color for the bars -->
-          borderColor: '#C70039',      <!-- Set color for the border of the bars -->
+          backgroundColor: '#FF5733',  
+          borderColor: '#C70039',      
           borderWidth: 1
         }],
         labels: [
@@ -39,12 +39,12 @@
         responsive: true,
         scales: {
           y: {
-            beginAtZero: true  <!-- Ensure Y-axis starts at 0 -->
+            beginAtZero: true 
           }
         },
         plugins: {
           legend: {
-            display: true  <!-- Display legend if needed -->
+            display: true  
           }
         }
       }
