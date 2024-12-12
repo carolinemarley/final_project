@@ -21,13 +21,13 @@ include "view-header.php";
 <div style="background-color: white; padding: 20px; border-radius: 10px; width: 80%; margin: 100px auto 0; text-align: center;">
     <h3 style = "color: lightpink;"> Contact Information: </h3>
     <p style="color: lightpink; font-size: 18px; text-align: center;"> 
-    Phone number: 123-456-7890
+    Phone number: 123-456-7890 <br><br>
     Email: norman.records@gmail.com
     </p>
     <h4 style = "color: lightpink;"> Store hours: </h4>
     <p style="color: lightpink; font-size: 18px; text-align: center;">
-        Monday - Friday: 8 AM - 8 PM
-        Saturday: 8 AM - 7 PM
+        Monday - Friday: 8 AM - 8 PM <br><br>
+        Saturday: 8 AM - 7 PM <br><br>
         Sunday: 11 AM - 6 PM
     </p>
 </div>
