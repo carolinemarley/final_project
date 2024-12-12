@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-artists-chart.php"); 
+require_once("model-analysis.php"); 
 
 $pageTitle = "Artists Chart";
 include "view-header.php";
