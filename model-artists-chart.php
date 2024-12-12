@@ -1,3 +1,4 @@
+<?php
 function selectArtists() {
     try {
         $conn = get_db_connection(); // Make sure the connection is successful
@@ -32,3 +33,4 @@ function selectArtists() {
         return null; // Return null in case of an error
     }
 }
+?>
