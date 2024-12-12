@@ -1,3 +1,4 @@
+<body style = "background-color: #f8c9d4;">
 <h1>Artists Chart</h1>
 <div>
   <canvas id="myChart"></canvas>
