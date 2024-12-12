@@ -32,6 +32,10 @@
     <label for="aYear" class="form-label">Release Years</label>
      <input type = "text" class = "form-control" id = "aYear" name = "aYear"/>
   </div>
+      <div class="mb-3">
+    <label for="aYear" class="form-label">Genre ID</label>
+     <input type = "text" class = "form-control" id = "aGenre" name = "aGenre"/>
+  </div>
   <input type ="hidden" name = "actionType" value="Add">
   <button type="submit" class="btn btn-primary">Save</button>
 </form>
