@@ -32,4 +32,38 @@ while ($artist = $artists->fetch_assoc()) {
     ]
 }, 
   });
+  const barCtx = document.getElementById('myBarChart');
+    new Chart(barCtx, {
+      type: 'bar',
+      data: {
+        labels: [
+          <?php
+          $artists = selectArtists(); 
+          while ($artist = $artists->fetch_assoc()) {
+            echo "'" .$artist['stage_name'] . "',";
+          }
+          ?> 
+        ],
+        datasets: [{
+          label: 'Number of Albums',
+          data: [
+            <?php
+            while ($artist = $artists->fetch_assoc()) {
+              echo $artist['num_albums'] . ",";
+            }
+            ?> 
+          ],
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
 </script>
