@@ -2,9 +2,8 @@
 <html>
 <body>
 
-<h1>JavaScript Dates</h1>
-<h2>Using new Date()</h2>
-<p>This is the current time: </p>
+<h1>Current Date and Time</h1>
+<p>This is the current date and time using Date(): </p>
 
 <p id="demo"></p>
 
