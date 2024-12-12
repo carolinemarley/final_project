@@ -4,7 +4,7 @@ include "view-header.php";
 ?>
     <h1 style = "color: white;">Final Project</h1>
 <div style = "background-color: white; padding; 20px; border-radius: 10px; width: 80%; margin: 20px auto 0; text-align: center;>
-    <p style="color: lightpink; font-size: 18px; text-align: center;">
+    <p style = "color: lightpink; font-size: 18px; text-align: center;">
     Welcome to the Homepage for our record store. We're glad you are visitng our page and thank you for you interest!
     </p>
 </div>
