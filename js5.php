@@ -19,7 +19,7 @@ function clearCoor() {
 <h2>Move your mouse over the image</h2>
 
 <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()">
-  <img src="record-js.jpg" style="width:100%;height:auto;">
+  <img src="https://mixdownmag.com.au/wp-content/uploads/2021/02/mixdown-magazine-sydney-record-shops.jpg" style="width:100%;height:auto;">
 </div>
 
 <p>See the coordinates of your mouse on the image!</p>
