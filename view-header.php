@@ -28,11 +28,17 @@
          <li class="nav-item">
           <a class="nav-link" href="artists-with-albums.php">Artists with Albums</a>
          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="analysis.php">Analysis</a>
+       <li class="nav-item">
+          <a class="nav-link" href="js1.php">3rd Party JavaScript #1</a>
          </li>
         <li class="nav-item">
-          <a class="nav-link" href="location.php">Location</a>
+          <a class="nav-link" href="js2.php">3rd Party JavaScript #2</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="js3.php">3rd Party JavaScript #3</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="js4.php">3rd Party JavaScript #4</a>
          </li>
       </ul>
     </div>
