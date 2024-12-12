@@ -15,14 +15,14 @@
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
-      type: 'bar',  // Changed from 'doughnut' to 'bar'
+      type: 'bar',  
       data: {
         datasets: [{
-          label: 'Number of Albums',  // Added label for the bars
+          label: 'Albums on Hand',  // Added label for the bars
           data: [
             <?php
-              while ($artist = $artists->fetch_assoc()) {
-                echo $artist['num_albums'] . ",";
+              while ($album = $albums->fetch_assoc()) {
+                echo $album['num_albums'] . ",";
               }
             ?>
           ],
@@ -46,9 +46,9 @@
         }],
         labels: [
           <?php
-            $artists = selectArtists(); 
-            while ($artist = $artists->fetch_assoc()) {
-              echo "'" . $artist['stage_name'] . "',";
+            $albums = selectAlbums(); 
+            while ($album = $albums->fetch_assoc()) {
+              echo "'" . $album['album_title'] . "',";
             }
           ?>
         ]
@@ -57,7 +57,7 @@
         responsive: true,
         scales: {
           y: {
-            beginAtZero: true  // Ensures the y-axis starts from 0
+            beginAtZero: true  
           }
         }
       }
