@@ -2,7 +2,7 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-    <h1 style = "color: lightgray;">Final Project</h1>
+    <h1 style = "color: white;">Final Project</h1>
 
 <p style="color: white; font-size: 18px; text-align: center;">
     Welcome to the Homepage for our record store. We're glad you are visitng our page and thank you for you interest!
