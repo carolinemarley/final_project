@@ -1,66 +1,34 @@
-<body style = "background-color: #f8c9d4;">
-<h1>Bar Chart Analysis</h1>
-<div>
-  <canvas id="myChart"></canvas>
-</div>
-
- <div style="background-color: white; padding: 20px; text-align: center; margin-top: 20px;">
-    <p style="color: lightpink; font-size: 18px; text-align: center;">In this chart, you can see our inventory for each album. Please continue to come back to this page to see updated numbers. </p>
+<body style="background-color: #f8c9d4;">
+  <h1>Bar Analysis</h1>
+  <div>
+    <canvas id="myChart"></canvas>
   </div>
-  
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-
- <script>
+  <script>
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
       type: 'bar',  
       data: {
         datasets: [{
-          label: 'Albums on Hand',  // Added label for the bars
           data: [
             <?php
-              while ($album = $albums->fetch_assoc()) {
-                echo $album['num_albums'] . ",";
-              }
-            ?>
+            while ($artist = $artists->fetch_assoc()) {
+              echo $artist['num_albums'] . ",";
+            }
+            ?> 
           ],
-           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',  // Red
-            'rgba(54, 162, 235, 0.2)',  // Blue
-            'rgba(255, 206, 86, 0.2)',  // Yellow
-            'rgba(75, 192, 192, 0.2)',  // Green
-            'rgba(153, 102, 255, 0.2)', // Purple
-            'rgba(255, 159, 64, 0.2)'   // Orange
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-          ],
+          backgroundColor: '#FF5733',  <!-- Set color for the bars -->
+          borderColor: '#C70039',      <!-- Set color for the border of the bars -->
           borderWidth: 1
         }],
         labels: [
           <?php
-            $albums = selectAlbums();
-            while ($album = $albums->fetch_assoc()) {
-              echo "'" . $album['album_title'] . "',";
-            }
-          ?>
-        ]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true  
+          $artists = selectArtists(); 
+          while ($artist = $artists->fetch_assoc()) {
+            echo "'" . $artist['album_title'] . "',";
           }
-        }
-      }
-    });
-  </script>
-</body>
+          ?> 
+        ]
+ 
