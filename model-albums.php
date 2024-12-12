@@ -13,11 +13,11 @@ function selectAlbums() {
   }
 }
 
-function insertAlbum($aTitle, $aOnHand, $aPrice, $aYear, $aGenre) {
+function insertAlbum($aTitle, $aOnHand, $aPrice, $aYear, $aGenre, $aArtist) {
   try {
     $conn = get_db_connection();
-    $stmt = $conn->prepare("INSERT INTO `album` (`album_title`, `albums_on_hand`, `price`, `release_year`, `genre_id`) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssi", $aTitle, $aOnHand, $aPrice, $aYear, $aGenre);
+    $stmt = $conn->prepare("INSERT INTO `album` (`album_title`, `albums_on_hand`, `price`, `release_year`, `genre_id`, `artist_id`) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssii", $aTitle, $aOnHand, $aPrice, $aYear, $aGenre, $aArtist);
     $success = $stmt->execute(); 
     $result = $stmt->get_result(); 
     $conn->close(); 
