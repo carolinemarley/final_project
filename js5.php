@@ -22,7 +22,7 @@ function clearCoor() {
   <img src="https://mixdownmag.com.au/wp-content/uploads/2021/02/mixdown-magazine-sydney-record-shops.jpg" style="width:100%;height:auto;">
 </div>
 
-<p style = "margin-top:20px;">See the coordinates of your mouse on the image!</p>
+<p style = "margin-top:60px;">See the coordinates of your mouse on the image!</p>
 
 <p id="demo"></p>
 
