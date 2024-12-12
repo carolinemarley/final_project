@@ -4,6 +4,7 @@ include "view-header.php";
 ?>
     <h1 style = "color: white;">Final Project</h1>
 
+<div style="background-color: white; padding: 20px; border-radius: 10px; width: 80%; margin: 0 auto; text-align: center;">
 <p style="color: lightpink; font-size: 18px; text-align: center;">
     Welcome to the Homepage for our record store. We're glad you are visitng our page and thank you for you interest!
 </p>
@@ -15,7 +16,7 @@ include "view-header.php";
         We are dedicated to serving our customers right and the community of Norman. 
         If you would ever like to see our store's inventory, have a question about a vinyl, or need any further assistance please don't hesitate to contact us!
     </p>
-
+</div>
 
 <style>
     body {
