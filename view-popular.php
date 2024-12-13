@@ -1,4 +1,4 @@
-<h1>Most Popular Records for Sale</h>
+<h1>Most Popular Records for Sale</h1>
 
 <div class="card" style="width: 18rem;">
   <img src="https://th.bing.com/th/id/OIF.CPoRTMy0MbtlG04rhDAIeQ?rs=1&pid=ImgDetMain" class="card-img-top">
