@@ -3,6 +3,4 @@
   </body>
 </html>
 
-<div style="background-color: white; padding: 20px; text-align: center; margin-top: 30px;">
-    <p style="color: lightpink; font-size: 18px; text-align: center;"> Caroline Marley-Nicholas Final Project </p>
-  </div>
+<p>Caroline Marley-Nicholas Final Project</p>
