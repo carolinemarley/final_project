@@ -35,6 +35,9 @@
           <a class="nav-link" href="analysis2.php">Bar Chart Analysis</a>
          </li>
         <li class="nav-item">
+          <li class="nav-item">
+          <a class="nav-link" href="popular.php">Most Popular Records</a>
+         </li>
           <a class="nav-link" href="location.php">Location</a>
          </li>
       </ul>
