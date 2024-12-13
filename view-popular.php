@@ -44,3 +44,14 @@
     </p>
   </div>
 </div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://img.discogs.com/qEX10TI9IegeInOQguPI3rKBGXw=/fit-in/600x602/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4166261-1357639701-6266.jpeg.jpg" class="card-img-top">
+  <div class="card-body text-center"> 
+    <p class="card-text">
+      good kid, m.A.A.d city <br><br>
+      Kendrick Lamar <br><br>
+      2012
+    </p>
+  </div>
+</div>
