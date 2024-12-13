@@ -33,3 +33,14 @@
     </p>
   </div>
 </div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://grandeslanzamientos.com.co/wp-content/uploads/2024/04/Fireworks-Rollerblades.jpeg" class="card-img-top">
+  <div class="card-body text-center"> 
+    <p class="card-text">
+      Fireworks & Rollerblades <br><br>
+      Benson Boone <br><br>
+      2024
+    </p>
+  </div>
+</div>
