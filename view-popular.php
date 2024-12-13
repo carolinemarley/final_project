@@ -1,6 +1,8 @@
 <body style = "background-color: #f8c9d4;">
-<h1>Most Popular Records for Sale</h1>
+<h1 style = "text-align: center;">Most Popular Records for Sale</h1>
 
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center;">
+  
 <div class="card" style="width: 18rem;">
   <img src="https://th.bing.com/th/id/OIF.CPoRTMy0MbtlG04rhDAIeQ?rs=1&pid=ImgDetMain" class="card-img-top">
   <div class="card-body text-center"> 
@@ -65,5 +67,6 @@
       2023
     </p>
   </div>
+</div>
 </div>
 
