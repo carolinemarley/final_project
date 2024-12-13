@@ -1,3 +1,4 @@
+<body style = "background-color: #f8c9d4;">
 <h1>Most Popular Records for Sale</h1>
 
 <div class="card" style="width: 18rem;">
