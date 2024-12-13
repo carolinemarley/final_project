@@ -22,3 +22,14 @@
     </p>
   </div>
 </div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://i.ebayimg.com/images/g/XVoAAOSwp8Zm9C1G/s-l1600.webp" class="card-img-top">
+  <div class="card-body text-center"> 
+    <p class="card-text">
+      I've Tried Everything But Therapy <br><br>
+      Teddy Swims <br><br>
+      2024
+    </p>
+  </div>
+</div>
