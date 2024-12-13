@@ -70,3 +70,7 @@
 </div>
 </div>
 
+  <div style="background-color: white; padding: 20px; text-align: center; margin-top: 30px;">
+    <p>These are our 6 most popular records for sale. Come back to this page at the end of each week to see an updated version. </p>
+  </div>
+
