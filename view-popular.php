@@ -1,5 +1,5 @@
 <body style = "background-color: #f8c9d4;">
-<h1 style = "text-align: center;">Most Popular Records for Sale</h1>
+<h1>Most Popular Records for Sale</h1>
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center;">
   
