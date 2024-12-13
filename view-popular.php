@@ -57,11 +57,11 @@
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="https://i0.wp.com/hip-hopvibe.com/wp-content/uploads/2023/08/IMG_3667.jpeg?fit=1170%2C596&ssl=1" class="card-img-top">
+  <img src="https://www.lahiguera.net/musicalia/artistas/tate_mcrae/disco/12126/tate_mcrae_i_used_to_think_i_could_fly-portada.jpg" class="card-img-top">
   <div class="card-body text-center"> 
     <p class="card-text">
-      For All the Dogs <br><br>
-      Drake <br><br>
+      i used to think i could fly <br><br>
+      Tate McRae <br><br>
       2023
     </p>
   </div>
