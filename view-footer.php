@@ -3,4 +3,5 @@
   </body>
 </html>
 
-<p>Caroline Marley-Nicholas Final Project</p>
+<p style="padding: 20px; text-align: center;">Caroline Marley-Nicholas Final Project</p>
+
